@@ -1,16 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Appuser{{ parent() }}{% endblock %}
+{% block title %}New Incident {{parent()}}{% endblock %}
 
 {% block body %}
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Create new Appuser</h1>
+                <h1>Create new Incident</h1>
             </div>
             <div class="col-12">
-                {{ include('appuser/_form.html.twig', {button_label: "create user"}) }}
+                {{ include('incident/_form.html.twig', {button_label: 'register incident'}) }}
             </div>
         </div>
     </div>
+
+
 {% endblock %}
